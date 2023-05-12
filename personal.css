@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-align: none;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navlogo h3 {
+  font-size: 2.2em;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navlogo h3 span {
+  color: red;
+}
+.navlinks ul {
+  display: flex;
+  gap: 20px;
+}
+.navlinks ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 250;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+.navlinks ul li a:hover {
+  color: white;
+  background-color: red;
+  padding: 8px 6px;
+  border: none;
+  border-radius: 5px;
+}
+
+.about {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+}
+.about-teks {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.about-grid {
+  width: 100%;
+}
+.about-grid h3 {
+  font-size: 2.2em;
+  color: white;
+}
+.about-grid p {
+  width: 50%;
+  font-size: 1.25em;
+  color: black;
+  text-shadow: 0 1px 1px white, 0 1px 1px white;
+}
+.about-grid button {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+}
+.about-grid button:hover {
+  color: black;
+  background-color: white;
+}
+
+.service {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.service-teks-md {
+  font-size: 0.9em;
+  color: white;
+  font-weight: 250;
+}
+.service-teks-lg {
+  font-size: 2.2em;
+  font-weight: 800;
+  color: red;
+  border-bottom: 1px solid red;
+}
+.service-grids {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 5px 20px;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+}
+
+.service-grid-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: start;
+  align-items: start;
+  cursor: pointer;
+}
+.service-grid-content i {
+  font-size: 1.25em;
+  font-weight: 100;
+  color: red;
+}
+.service-grid-content h5 {
+  text-transform: capitalize;
+  font-size: 2.2em;
+  font-weight: 650;
+  color: white;
+}
+.service-grid-content p {
+  font-size: 1.25em;
+  font-weight: 200;
+  color: white;
+}
+
+.service-grid-content:hover {
+  background-color: red;
+}
+.service-grid-content:hover i {
+  color: white;
+}
+
+.contact {
+  padding: 20px 0;
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-col label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+}
+.contact-col input {
+  padding: 10px 20px;
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 1px;
+}
+
+#button {
+  margin-top: 10px;
+  display: flex;
+  gap: 50px;
+}
+#button button {
+  display: inline-block;
+  width: 65px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+#button button:hover {
+  background-color: red;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.footer-satu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  color: white;
+}
+.footer-satu h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2.2em;
+}
+.footer-satu b, .footer-satu p {
+  font-size: 1.25em;
+}
+.footer-dua ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer-dua li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25em;
+}
+.footer-dua li a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navlogo h3 {
+    font-size: 1.25em;
+  }
+  .navlinks {
+    display: none;
+  }
+  .navtoggle {
+    display: flex;
+  }
+  .navtoggle i {
+    cursor: pointer;
+    color: white;
+    font-size: 1.25em;
+  }
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content {
+    padding: 0 20px;
+  }
+  .service {
+    padding-bottom: 50px;
+  }
+  .service-grids {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+  }
+  .service-grid-content:nth-child(5) {
+    display: none;
+  }
+  .service-grid-content:nth-child(6) {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .about {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=personal.css.map */

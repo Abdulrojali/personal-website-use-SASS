@@ -1,0 +1,325 @@
+$primary-color:white;
+$second-color:black;
+$thrid-color:red;
+$font-md:1.25em;
+$font-lg:2.2em;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-align: none;
+}
+body{
+    background-color: $second-color;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.nav{
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &logo{
+        h3{
+            font-size: $font-lg;
+            color:$primary-color;
+            font-weight: 700; 
+            cursor: pointer;
+            span{
+                color: $thrid-color;
+            } 
+        }
+ 
+    }
+    &links{
+        ul{
+            display: flex;
+            gap: 20px;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $primary-color;
+                    font-weight: 250;
+                    font-size: $font-md;
+                    cursor: pointer;
+                }
+                a:hover{
+                    color:$primary-color;
+                    background-color: $thrid-color;
+                    padding: 8px 6px;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.about{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    &-content{
+        display: flex;
+        
+        align-items: center;
+    }
+    &-teks{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &-grid{
+        width: 100%;
+        h3{
+            font-size: $font-lg;
+            color: $primary-color;
+        }
+        p{
+            width: 50%;
+            font-size: $font-md;
+            color: $second-color;
+            text-shadow: 0 1px 1px  $primary-color,
+                         0 1px 1px $primary-color ;
+        }
+        button{
+            display: inline-block;
+            width: 60px;
+            height: 25px;
+            cursor: pointer;
+            color: $primary-color;
+            background-color: $thrid-color;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            color:$second-color;
+            background-color: $primary-color;
+        }
+    }
+}
+
+.service{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    &-teks-md{
+        font-size: .9em;
+        color: $primary-color;
+        font-weight: 250;
+    }
+    &-teks-lg{
+        font-size: $font-lg;
+        font-weight: 800;
+        color: $thrid-color;
+        border-bottom: 1px solid $thrid-color;
+    }
+    &-grids{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        padding: 5px 20px;
+        grid-template-columns: repeat(3,200px);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 5px;
+   }
+}
+.service-grid-content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    align-items: start;   
+    cursor: pointer;
+    i{
+       font-size: $font-md;
+       font-weight: 100;
+       color: $thrid-color;
+    }
+    h5{
+        text-transform: capitalize;
+       font-size: $font-lg;
+       font-weight: 650;
+       color: $primary-color;
+    }
+    p{
+       font-size: $font-md;
+       font-weight: 200;
+       color: $primary-color;
+    }
+
+}
+.service-grid-content:hover{
+    background-color: red;
+    i{
+        color: white;
+    }
+}
+
+.contact{
+    padding: 20px 0;
+    background-color: $thrid-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  &-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
+.contact-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    label{
+        font-size: $font-md;
+        font-weight: 700;
+        color: $primary-color;
+    }
+    input{
+        padding: 10px 20px;
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        cursor: pointer;
+        border: none;
+        border-radius: 1px;
+    }
+
+}
+#button{
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+    button{
+        display: inline-block;
+        width: 65px;
+        height: 25px;
+        background-color: $primary-color;
+        color:$second-color; 
+        border: none;
+    }
+    button:hover{
+        background-color: $thrid-color;
+        color: $primary-color;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+ &-satu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    color: $primary-color;
+    h3{
+       text-transform: capitalize;
+       font-weight: 600;
+        font-size: $font-lg;
+    }
+    b,p{
+        font-size: $font-md;
+    }
+ }
+ &-dua{
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    li{
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: $primary-color;
+            font-size: $font-md;
+        }
+        a:hover{
+            color: $thrid-color;
+        }
+    }
+ }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        &logo{
+            h3{
+                font-size: $font-md;  
+            }
+        }
+        &links{
+            display: none;
+        }
+        &toggle{
+            display: flex;
+            i{
+                cursor: pointer;
+                color: white;
+                font-size: $font-md;
+            }
+        }
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-content{
+            padding: 0 20px;
+        }
+    }
+    .service{
+        padding-bottom: 50px;
+        &-grids{
+            display: grid;
+            grid-template-columns: repeat(2,150px);
+       }
+      }
+      .service-grid-content:nth-child(5){
+        display: none;
+    }
+    .service-grid-content:nth-child(6){
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    }
+   
+
+
+
+@media only screen and (min-width: 600px) {
+    .about{
+        padding: 20px;
+    }
+}
